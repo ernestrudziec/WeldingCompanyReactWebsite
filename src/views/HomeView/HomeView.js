@@ -22,14 +22,14 @@ const HomeView = () => {
 
 
 
-               <p> Realizuję kompleksowe zlecenia spawalnicze związane z projektowaniem oraz <b>tworzeniem konstrukcji stalowych</b>, produktów wykorzystywanych w hodowli zwierząt, bram i ogrodzeń, a także elementów specjalnych. Wykorzystuje stal nierdzewną, czarną oraz aluminium oraz metody MAG i TIG. </p>
+               <div className={styles.description}> <p> Realizuję kompleksowe zlecenia spawalnicze związane z projektowaniem oraz <b>tworzeniem konstrukcji stalowych</b>, produktów wykorzystywanych w hodowli zwierząt, bram i ogrodzeń, a także elementów specjalnych. Wykorzystuje stal nierdzewną, czarną oraz aluminium oraz metody MAG i TIG. </p> </div>
                <div className={styles.contactInfo}>
                    <h3>667 838 591</h3>
                    <h3>myjak.uslugispawalnicze@gmail.com</h3>
                </div>
 
            </header>
-           <button className={styles.callNow}>Wykonane zlecenia</button>
+           <button className={styles.callNow}>Zobacz sam!</button>
 
            <div className="mouse_scroll">
 
