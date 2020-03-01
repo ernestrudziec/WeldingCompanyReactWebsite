@@ -1,0 +1,190 @@
+
+@import "../../styles/mixins";
+
+@media screen and (max-height: 850px) and (max-width: 1000px) {
+  body, html {
+    font-size: 16px;
+  }
+}
+
+  @media screen and (max-height: 600px) and (max-width: 500px){
+    body,html {
+      font-size: 12px;
+    }
+}
+.callNow{
+@include font-gradient(#e52d26, #b31217);
+  font-size: 1em;
+  padding: 10px 50px;
+  margin-bottom: 5vh;
+  border-radius: 15px;
+  border: none;
+  position: relative;
+  font-family: Oxanium;
+  font-weight: 600;
+  transition: 0.5s;
+  outline: none;
+  cursor: pointer;
+
+  &:hover{
+
+
+    &:before{
+      transition: 0.5s;
+      transform: scale(1.05);
+    }
+
+  }
+
+
+
+  &:before{
+    outline: none;
+    transition: 0.5s;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background: white;
+    z-index: -1;
+    border-radius: 10px;
+
+  }
+
+
+}
+
+.wrapper{
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+
+
+  &:before{
+    position: fixed;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url("https://images.pexels.com/photos/259984/pexels-photo-259984.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-position: center;
+    z-index: -3;
+
+  }
+
+  &:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #870000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #190A05, #000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.8;
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    z-index: -3;
+  }
+
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  padding: 1em;
+
+  h1{
+    font-size: 2em;
+    margin: 0;
+
+  }
+
+  h2{
+    margin: 0;
+    font-family: Oxanium;
+    font-size: 1em;
+    letter-spacing: 0.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    border: solid 1px white;
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+
+  }
+
+  p{
+    //@include font-gradient(#870000, #190a05);
+    max-width: 1200px;
+    text-align: center;
+    font-family: Roboto Slab;
+    margin: 0;
+    padding: 1em;
+
+
+    b{
+      font-weight: 600;
+    }
+
+
+  }
+}
+
+
+}
+
+.icon{
+
+ @include icon('../assets/welder.svg');
+  background: white;
+  width: 150px;
+  height: 150px;
+  display: block;
+
+
+  @media screen and (max-width: 600px){
+    width: 100px;
+    height: 100px;
+  }
+
+
+}
+
+.contactInfo{
+  margin-bottom: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+  h3{
+    font-size: 0.8rem;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 3px;
+    font-family: Oxanium;
+    text-transform: uppercase;
+  }
+
+  h3:first-of-type{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}

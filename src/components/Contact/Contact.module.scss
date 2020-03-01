@@ -1,0 +1,91 @@
+
+@import "../../styles/mixins";
+
+.wrapper{
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  text-align: center;
+
+
+
+  &:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url("https://images.pexels.com/photos/2554128/pexels-photo-2554128.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+  }
+
+  &:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #870000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #190A05, #000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.8;
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+  img{
+    @include icon('../assets/welding.svg');
+    background: white;
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+
+    @media screen and (max-width: 700px){
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.contactWrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+}
+
+.contactInfo{
+  margin: 10px 0px;
+  padding: 0;
+
+  &:first-of-type{
+    font-size: 3em;
+    @media screen and (max-width: 800px){
+      font-size: 2em;
+
+    }
+  }
+  @media screen and (max-width: 800px){
+    font-size: 1em;
+
+  }
+
+}
+
+
+

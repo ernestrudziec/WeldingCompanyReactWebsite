@@ -1,0 +1,53 @@
+@import '../styles/mixins';
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+  padding: 1em;
+
+  svg{
+    @include icon("../assets/welding (2).svg");
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#e52d26, #b31217);
+
+  }
+
+
+  h1{
+    @include font-gradient(#e52d27, #b31217);
+  }
+
+  p{
+    max-width: 600px;
+    text-align: center;
+    font-weight: 100;
+    font-family: Roboto Slab;
+  }
+
+
+}
+
+.gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+
+img{
+  flex: auto;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0.5em;
+  border-radius: 15px 15px 15px 15px;
+  @include lightShadow;
+}
+
+
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium:200,300,400,500,600,700,800|Teko:300,400,500,600,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
+
+
+
+body,html{
+
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Oxanium;
+  font-size: 21px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1{
+  font-size: 34px;
+}
+
+
+
