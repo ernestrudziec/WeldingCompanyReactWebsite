@@ -12,10 +12,7 @@ const HomeView = () => {
     <>
        <section className={styles.wrapper}>
 
-           <div className={styles.contactInfo}>
-               <h3>667 838 591</h3>
-               <h3>myjak.uslugispawalnicze@gmail.com</h3>
-           </div>
+
 
            <div className={styles.icon}/>
            <header>
@@ -24,8 +21,12 @@ const HomeView = () => {
                <h2>Adrian Myjak</h2>
 
 
-               <p> Realizuję kompleksowe zlecenia spawalnicze związane z projektowaniem oraz <b>tworzeniem konstrukcji stalowych</b>, produktów wykorzystywanych w hodowli zwierząt, bram i ogrodzeń, a także elementów specjalnych. Wykorzystuje stal nierdzewną, czarną oraz aluminium oraz metody MAG i TIG. </p>
 
+               <p> Realizuję kompleksowe zlecenia spawalnicze związane z projektowaniem oraz <b>tworzeniem konstrukcji stalowych</b>, produktów wykorzystywanych w hodowli zwierząt, bram i ogrodzeń, a także elementów specjalnych. Wykorzystuje stal nierdzewną, czarną oraz aluminium oraz metody MAG i TIG. </p>
+               <div className={styles.contactInfo}>
+                   <h3>667 838 591</h3>
+                   <h3>myjak.uslugispawalnicze@gmail.com</h3>
+               </div>
 
            </header>
            <button className={styles.callNow}>Wykonane zlecenia</button>
